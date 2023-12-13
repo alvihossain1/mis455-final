@@ -94,7 +94,7 @@ function processWeather(data){
                     <p class="highlight-2">${data.weather[0].main}</p>
                  </div>
                 <div class="small-box">
-                    <h4 class="light-text">Visibility</h4>
+                    <h4 class="light-text">Weather</h4>
                     <div class="image-holder icon-holder">
                         <img class="image" src="${iconUrl}" alt="icon">
                     </div>
