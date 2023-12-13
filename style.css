@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* NAVBAR */
+
+.font-1{
+  font-family: 'Rubik', sans-serif;
+}
+
+.font-2{
+  font-family: 'Architects Daughter', cursive;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #177986;
+  color: white;
+}
+
+.navbar .active {
+  background-color: rgb(212, 44, 134);
+  color: white;
+}
+
+.nav-head{
+  margin: auto 0;
+  padding: 0 1rem;
+  color: #14b9cf;
+}
+
+/* NAVBAR ENDS */
+
+
+/* MAIN STARTS */
+.main{
+  min-height: 85vh;
+}
+
+
+
+/* HOME CSS */
+
+
+
+.paras{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button{
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #363636;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button:hover{
+  background-color: #175086;
+  color: white;
+}
+
+.center{
+  text-align: center;
+}
+
+/* Home CSS ENDS */
+
+
+
+/* FOOTER */
+.footer-inner{
+  display: flex;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 20px;
+}
+
+.footer .item{
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .tags{
+  padding: 10px 0;
+  color: white;
+}
+
+.footer .icons{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.footer .icon{
+  padding: 5px 10px;
+}
+
+.footer .para{
+  text-align: center;
+}
+
+.footer-down{
+  text-align: center;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+}
+
+.footer-down a{
+  color: white;
+}
+
+/* FOOTER ENDS */
