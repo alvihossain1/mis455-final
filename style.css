@@ -6,15 +6,6 @@
 }
 
 /* NAVBAR */
-
-.font-1{
-  font-family: 'Rubik', sans-serif;
-}
-
-.font-2{
-  font-family: 'Architects Daughter', cursive;
-}
-
 .navbar {
   width: 100%;
   background-color: rgb(54, 54, 54);
@@ -56,6 +47,10 @@
   margin: auto 0;
   padding: 0 1rem;
   color: #14b9cf;
+}
+
+.nav-head-icon{
+  padding: 0 0.3rem;
 }
 
 /* NAVBAR ENDS */
@@ -130,7 +125,15 @@
 }
 
 .footer .icon{
-  padding: 5px 10px;
+  padding: 0.5rem 0.7rem;
+}
+
+.footer .hover{
+  transition: 0.3s ease-in-out;
+}
+
+.footer .hover:hover{
+  color: #199eaf;
 }
 
 .footer .para{
