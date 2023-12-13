@@ -159,13 +159,12 @@
 .small-box-holder{
   display: flex;
   gap: 0.6rem;
-  flex-wrap: wrap;
   margin-top: 0.5rem;
 }
 
 .small-box{
-  padding: 1rem;
-  gap: 0.1rem;
+  width: calc(100%/4);
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
