@@ -14,4 +14,6 @@ function processWeather(data){
     `;
 }
 
-
+function image(data){
+    
+}
