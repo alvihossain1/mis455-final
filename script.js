@@ -9,37 +9,52 @@ function processWeather(data){
     console.log(data)
 
     // Image Process
-    var imgData = data.weather[0].description;
+    var imgData = data.weather[0].main.toLowerCase();
     var img;
-    if(imgData === "clear sky"){
-        img = "clear_sky.jpg";
-    }
-    else if(imgData === "few clouds"){
-        img = "few_clouds.jpg";
-    }
-    else if(imgData === "scattered clouds" || imgData === "clouds"){
-        img = "scattered_clouds.jpg";
-    }
-    else if(imgData === "broken clouds"){
-        img = "broken_clouds.jpg";
-    }
-    else if(imgData === "shower rain"){
-        img = "shower_rain.jpg";
-    }
-    else if(imgData === "rain"){
-        img = "clear_sky.jpg";
-    }
-    else if(imgData === "thunderstorm"){
+    if(imgData === "thunderstorm"){
         img = "thunderstorm.jpg";
     }
+    else if(imgData === "drizzle"){
+        img = "drizzle.jpg";
+    }
+    else if(imgData === "rain"){
+        img = "rain.jpg";
+    }
     else if(imgData === "snow"){
-        img = "snowfall.jpg";
+        img = "snow.jpg";
     }
     else if(imgData === "mist"){
         img = "mist.jpg";
     }
+    else if(imgData === "smoke"){
+        img = "smoke.jpg";
+    }
     else if(imgData === "haze"){
         img = "haze.jpg";
+    }
+    else if(imgData === "dust"){
+        img = "dust.jpg";
+    }
+    else if(imgData === "fog"){
+        img = "fog.jpg";
+    }
+    else if(imgData === "sand"){
+        img = "sand.jpg";
+    }
+    else if(imgData === "ash"){
+        img = "ash.jpg";
+    }
+    else if(imgData === "squall"){
+        img = "squall.jpg";
+    }
+    else if(imgData === "tornado"){
+        img = "tornado.jpg";
+    }
+    else if(imgData === "clear"){
+        img = "clear.jpg";
+    }
+    else if(imgData === "clouds"){
+        img = "clouds.jpg";
     }
 
     // Icons Process
