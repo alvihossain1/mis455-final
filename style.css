@@ -81,11 +81,51 @@
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   width: 100%;
-  background-color: rgb(41, 41, 41);
-  padding: 2rem;
-  border-radius: 20px;
+  background-color: #090f1a;
+  padding: 1.5rem;
+  border-radius: 1rem;
   color: white;
 
+}
+
+.form-item{
+  margin: 0.5rem 0;
+}
+
+.input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 3px solid rgba(17, 134, 163, 0.678);
+  box-shadow: 0 0 1rem rgb(82, 82, 82);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-size: 1rem;
+}
+
+.input:focus{
+  border: 3px solid rgba(109, 17, 163, 0.678);
+}
+
+.button{
+  border: none;
+  outline: none;
+  background-color: rgba(17, 134, 163, 0.678);
+  color: white;
+  transition: 0.4s ease;
+  width: 100%;
+  margin: auto;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: rgb(192, 99, 192);
 }
 
 
