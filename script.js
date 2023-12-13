@@ -8,7 +8,7 @@ function search(){
 function processWeather(data){
     console.log(data)
 
-    // Image process
+    // Image Process
     var imgData = data.weather[0].description;
     var img;
     if(imgData === "clear sky"){
@@ -17,7 +17,7 @@ function processWeather(data){
     else if(imgData === "few clouds"){
         img = "few_clouds.jpg";
     }
-    else if(imgData === "scattered clouds"){
+    else if(imgData === "scattered clouds" || imgData === "clouds"){
         img = "scattered_clouds.jpg";
     }
     else if(imgData === "broken clouds"){
@@ -41,6 +41,10 @@ function processWeather(data){
     else if(imgData === "haze"){
         img = "haze.jpg";
     }
+
+    // Icons Process
+    var icon = data.weather[0].icon;
+    var iconUrl =  `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
     var content2 = document.getElementById("content-weather");
     content2.innerHTML = `
@@ -84,9 +88,21 @@ function processWeather(data){
                     <p class="highlight-2">${data.main.temp_max}°C</p>
                 </div>                
             </div>
+            <div class="small-box-holder">
+                <div class="small-box">
+                    <h4 class="light-text">Weather</h4>
+                    <p class="highlight-2">${data.weather[0].main}</p>
+                 </div>
+                <div class="small-box">
+                    <h4 class="light-text">Visibility</h4>
+                    <div class="image-holder icon-holder">
+                        <img class="image" src="${iconUrl}" alt="icon">
+                    </div>
+                </div>                                
+            </div>
             <div class="small-box-image">
                 <div class="image-holder">
-                    <img class="image" src="./images/${img}" alt="weather">
+                    <img class="image" src="images/${img}" alt="weather">
                 </div>
             </div>
         </div>
