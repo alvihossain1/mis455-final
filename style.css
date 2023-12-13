@@ -35,7 +35,7 @@
 }
 
 .navbar li a:hover:not(.active) {
-  background-color: #177986;
+  background-color: rgb(16, 140, 172);
   color: white;
 }
 
@@ -62,23 +62,30 @@
   min-height: 85vh;
 }
 
-
-
-/* HOME CSS */
-.flex-container{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+.margin-top-1{
+  margin-top: 0.5rem;
+}
+.margin-top-2{
+  margin-top: 1rem;
 }
 
-.flexbox{
-  height: 50vh;
+.container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-1{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
   background-color: rgb(41, 41, 41);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 20px;
   color: white;
+
 }
 
 
@@ -122,7 +129,7 @@
 }
 
 .footer .hover:hover{
-  color: #199eaf;
+  color: rgb(16, 140, 172);
 }
 
 .footer .para{
