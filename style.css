@@ -8,7 +8,7 @@
 /* NAVBAR */
 .navbar {
   width: 100%;
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(36, 36, 36);
   display: flex;
   justify-content: center;
   padding: 5px 0;
@@ -29,7 +29,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 15px 20px;
+  padding: 1.1rem 1.8rem;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
@@ -48,6 +48,7 @@
   margin: auto 0;
   padding: 0 1rem;
   color: #14b9cf;
+  cursor: default;
 }
 
 .nav-head-icon{
@@ -74,7 +75,7 @@
 }
 
 .highlight-1{
-  color: rgb(180, 38, 38);
+  color: rgb(204, 37, 37);
   font-weight: bold;
 }
 
@@ -86,11 +87,8 @@
 
 /* STARTS */
 .container{
-  width: 60%;
+  width: 50%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .box-1{
@@ -147,7 +145,8 @@
 
 .box-2{
   width: 100%;
-  margin-top: 0.5rem;
+  margin: auto;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #1d232e;
   padding: 1.5rem;
@@ -165,7 +164,8 @@
 
 .small-box{
   width: calc(100%/4);
-  padding: 1.2rem;
+  padding: 1rem;
+  gap: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,31 +173,40 @@
   cursor: pointer;
   border-radius: 5px;
   transition: 0.4s ease;
-  background: linear-gradient(#ffffff, #cfcfcf);
+  background: linear-gradient(#ffffff, #c5c5c5);
 }
 
 .small-box:hover{
-  background: linear-gradient(#ffffff, #f1d6d6);
+  background: linear-gradient(#ffffff, #f0caca);
 }
 
 .icon-holder{
-  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.icon-image{
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+}
 
 
 .small-box-image{
   margin-top: 0.5rem;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   margin: auto;
   padding: 1.2rem 0;
+  padding-bottom: 0;
 }
 
 .image-holder{
   overflow: hidden;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 
 .image{
@@ -214,7 +223,7 @@
 /* FOOTER */
 .footer-inner{
   display: flex;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(36, 36, 36);
   color: white;
   padding: 20px;
 }
@@ -264,4 +273,18 @@
   color: white;
 }
 
+.underline-remove{
+  text-decoration: none;
+}
+
 /* FOOTER ENDS */
+
+
+
+@media only screen and (max-width: 850px){
+
+  .container{
+      width: 90%;
+  }
+
+}
